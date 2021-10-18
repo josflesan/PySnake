@@ -59,8 +59,8 @@ pygame.display.set_caption("Python Snake")
 clock = pygame.time.Clock()
 
 # MUSIC AND SFX SETUP
-pygame.mixer.music.load("C:\\Users\\Jos432\\Documents\\Projects\\Snake\\music\\bgmusic.wav")
-sfx = pygame.mixer.Sound("C:\\Users\\Jos432\\Documents\\Projects\\Snake\\music\\munch.wav")
+pygame.mixer.music.load(os.path.join(os.getcwd() + "\\Snake\\music\\bgmusic.wav"))
+sfx = pygame.mixer.Sound(os.path.join(os.getcwd() + "\\Snake\\music\\munch.wav"))
 
 #---------------------------------------------------
 
@@ -75,9 +75,9 @@ bg = get_file("ArcadeMachine.png", "graphics", main_dir)
 bg = pygame.transform.scale(bg, [SCREEN_W, SCREEN_H])
 
 # FONTS
-font = pygame.font.Font("C:\\Users\\Jos432\\Documents\\Fonts\\Chocolate Cavalcade.otf", 20)
-insert_coin = pygame.font.Font("C:\\Users\\Jos432\\Documents\\Fonts\\Chocolate Cavalcade.otf", 30)
-deathfont = pygame.font.Font("C:\\Users\\Jos432\\Documents\\Fonts\\Chocolate Cavalcade.otf", 16)
+font = pygame.font.Font(os.path.join(os.getcwd() + "\\Snake\\fonts\\Chocolate Cavalcade.otf"), 20)
+insert_coin = pygame.font.Font(os.path.join(os.getcwd() + "\\Snake\\fonts\\Chocolate Cavalcade.otf"), 30)
+deathfont = pygame.font.Font(os.path.join(os.getcwd() + "\\Snake\\fonts\\Chocolate Cavalcade.otf"), 16)
 
 # ----------------------------------------------------------------
 
